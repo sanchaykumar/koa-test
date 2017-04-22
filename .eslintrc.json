@@ -1,0 +1,59 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": 0,
+        "no-else-return": 1,
+        "vars-on-top": 1,
+        "no-useless-call": 1,
+        "no-useless-concat": 1,
+        "keyword-spacing": 1,
+        "space-before-blocks": 1,
+        "one-var": [
+            "error",
+            "never"
+        ],
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "comma-dangle": ["error", {
+            "arrays": "never",
+            "objects": "never",
+            "imports": "never",
+            "exports": "never",
+            "functions": "ignore"
+        }],
+        "key-spacing" : ["error", {
+            "beforeColon": false,
+            "afterColon": true
+        }],
+        "newline-after-var": [
+            "error",
+            "always"
+        ],
+        "space-before-function-paren": ["error", {
+            "anonymous": "never",
+            "named": "never",
+            "asyncArrow": "ignore"
+        }]
+    }
+}
