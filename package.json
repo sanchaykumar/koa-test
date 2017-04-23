@@ -7,7 +7,7 @@
     "start:lint": "eslint src/**/*.js",
     "start:lint:fix": "eslint src/**/*.js --fix",
     "start:nodemon": "nodemon --exec babel-node -- src/server.js",
-    "start:build": "babel -d dist src/server.js",
+    "start:build": "babel -d dist **/*.js",
     "start:server": "node dist/src/server.js",
     "start:dev": "npm run start:lint && npm run start:nodemon",
     "start:prod": "npm run start:build && npm run start:server"
@@ -15,10 +15,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "co-body": "5.1.1",
-    "dotenv": "4.0.0",
+    "config": "1.25.1",
     "koa": "2.2.0",
-    "koa-bodyparser": "4.2.0",
     "koa-multer": "1.0.1",
     "koa-router": "7.1.1",
     "request": "2.81.0"

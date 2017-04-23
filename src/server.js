@@ -1,5 +1,5 @@
 import Koa from 'koa';
-import request from 'request';
+import KoaBody from 'koa-body';
 
 import err from './helpers/error';
 import { routes } from './routes';
@@ -9,10 +9,6 @@ const app = new Koa();
 app.use(err);
 app.use(routes());
 
-
-// const auth_token = {
-//     'www.olx.in': 'wFutcFmGBdDSmsr4cF3mox87NB7jG7Tmat96'
-// };
 
 // app.use(async function (ctx, next) {
 //   const start = new Date();
@@ -30,7 +26,6 @@ app.use(routes());
 //     console.log(`${ctx.method} ${ctx.url} - ${ms}`);
 // });
 
-// app.use(router.routes());
 
 
 app.listen(8081, () => {
@@ -38,11 +33,6 @@ app.listen(8081, () => {
 });
 
 
-// const http = require('http'),
-//       config = require('config'),
-//       app = new Koa();
-
-// app.use(err);
 // app.use(allowedMethods());
 
 // const server = http.createServer(app.callback()).listen(config.server.port, function () {
